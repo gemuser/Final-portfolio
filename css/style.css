@@ -1,0 +1,164 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+  
+
+.container
+{
+  display: flex;
+  background-attachment: fixed;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+}
+.profilepic
+{
+  display: flex;
+  float: right;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 30vw;
+  margin-top: 17vh; 
+}
+.profilepic h1{
+  font-size: 3.33vw;
+  font-family: 'Times New Roman', Times, serif;
+  color: rgb(255, 255, 255);
+  transition: all 0.3s ease-in-out;
+}
+.profilepic h1:hover
+{
+  color: rgb(109, 165, 238);
+  transform: scale(1.1);
+  
+  cursor: default;
+}
+
+.container .profilepic img  
+{
+      width: 28vw;
+      height: 28vw;
+      border-radius: 50%;
+      border: solid 5px rgb(255, 255, 255);
+      margin: 20px;
+      box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+      transition: all 0.3s ease-in-out;
+}
+.container img:hover
+{
+      transform: scale(1.1);
+}
+.intro
+{
+    width: 35vw;
+    margin-top: 50vh;
+    
+}
+.intro p
+{
+    margin-left: 2vw;
+    padding-top: 0;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-bottom: 1vh;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 22px;
+    text-align: justify;
+    line-height: auto;
+    color: rgb(255, 255, 255);
+    transition: all 0.3s ease-in-out;
+}
+ b
+{
+    color: rgb(109, 165, 238);
+    font-size:120%;
+}
+b:hover
+{
+    color: rgb(255, 255, 255);
+}
+.intro h1
+{
+    margin-left: 3.6vw;
+    width: 12vw;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 32px;
+    color: rgba(109, 165, 238, 0.789);
+    transition: all 0.3s ease-in-out;
+    margin-bottom: 10px;
+}
+.intro h1:hover
+{
+    color: rgb(255, 255, 255);
+    transform: scale(1.1);
+    text-decoration: underline;
+    cursor: default;
+}
+.intro p:hover
+{
+    color: rgb(255, 255, 255);
+    transform: scale(1.03);
+    cursor: default;
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+@media screen and (max-width: 600px){
+    
+    .container {
+        display: flex;
+        flex-direction: column;
+        background-attachment: fixed;
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/background.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+    }
+    .intro {
+        width: fit-content;
+        margin-top: 70px;
+    }
+    .intro p {
+        margin-left: 2vw;
+        padding-top: 0;
+        padding-left: 2vw;
+        padding-right: 2vw;
+        padding-bottom: 1vh;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 16px;
+        line-height: auto;
+        color: rgb(255, 255, 255);
+        transition: all 0.3s ease-in-out;
+        text-align: justify;
+    }
+    .profilepic {
+        display: flex;
+        float: right;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    .container .profilepic img {
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        border: solid 5px rgb(255, 255, 255);
+        margin: 20px;
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+        transition: all 0.3s ease-in-out;
+    }
+    .profilepic h1 {
+        font-size: 40px;
+        font-family: 'Times New Roman', Times, serif;
+        color: rgb(255, 255, 255);
+        transition: all 0.3s ease-in-out;
+    }
+}
