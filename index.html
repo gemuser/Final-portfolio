@@ -20,7 +20,7 @@
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>                                                                 
             <li><a href="#education">Education</a></li>                                                                 
-            <li><a href="#c">Contact</a></li> 
+            <li><a href="#contact">Contact</a></li> 
             <input type="submit" onclick="location.href='https://www.upwork.com/freelancers/~01d2f9a4efdc237de7?mp_source=share'" value="Hire me" class="button">                                                 
         </ul>
     </nav>
@@ -233,12 +233,26 @@
     </section>
     
     <script>
+        function saveScrollPosition() {
+            return window.scrollY || document.documentElement.scrollTop;
+        }
+
+        function restoreScrollPosition(position) {
+            window.scrollTo(0, position);
+        }
+
         function showSidebar()
          {
             let sidebar = document.querySelector(".sidebar");
             {
                 sidebar.style.display = "flex";
             }
+            const scrollPosition = saveScrollPosition();
+            document.querySelector('.sidebar').classList.toggle('active');
+            
+            // Restore the scroll position after a short delay
+            setTimeout(() => restoreScrollPosition(scrollPosition), 1);
+            
          }
          function hideSidebar()
          {
@@ -246,6 +260,12 @@
             {
                 sidebar.style.display = "none";
             }
+            const scrollPosition = saveScrollPosition();
+            document.querySelector('.sidebar').classList.toggle('active');
+            
+            // Restore the scroll position after a short delay
+            setTimeout(() => restoreScrollPosition(scrollPosition), 1);
+            
          }
     </script>
 </body>
