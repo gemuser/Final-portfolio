@@ -14,7 +14,6 @@ nav
 }
 nav ul
 {
-    margin-top: 30px;
     position: fixed;
     margin-left: 50vw;
     display: flex;
@@ -24,6 +23,10 @@ nav ul
     align-items: center;
     font-size: 16px
     
+}
+.hideonmobile
+{
+    margin-top: 30px;
 }
 nav li{
     height: 60px;
