@@ -48,6 +48,10 @@ nav a:hover
     transform: scale(1.1);
     text-decoration: underline;
 }
+nav a:active
+{
+    text-decoration: underline;
+}
 .sidebar
 {
     margin-top: 0px;
